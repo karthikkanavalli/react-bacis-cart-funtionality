@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# React Shopping Cart Functionality
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates a complete **shopping cart functionality** built with **React**. It includes all major cart features, such as:
 
-## Available Scripts
+- **Add to Cart**: Users can add items to the cart.
+- **Quantity Control**: Users can input or adjust the quantity of each item in the cart.
+- **Remove Items**: Items can be removed from the cart.
+- **Update Quantity**: Users can change the quantity of items directly from the cart.
 
-In the project directory, you can run:
+## Key Features
 
-### `npm start`
+- **State Management with Hooks**: This project utilizes **React hooks** such as `useState`,`useContext` and `useReducer` to manage the cart's state efficiently.
+- **Responsive UI**: The user interface adjusts to different screen sizes for a smooth shopping experience across devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Core Functionality
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Add to Cart**:
 
-### `npm test`
+   - Items can be added to the cart from the product listing.
+   - The cart updates in real-time as items are added.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Quantity Control**:
 
-### `npm run build`
+   - Users can specify the quantity for each item before adding it to the cart.
+   - Quantities can be adjusted directly within the cart, either by inputting a value or using buttons.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Remove from Cart**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - Users can remove items from the cart entirely.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Update Cart Quantities**:
+   - Users can change the quantity of items in the cart dynamically.
+   - The cart state updates accordingly, showing the updated total.
 
-### `npm run eject`
+## Hooks Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `useState`: To manage local state for individual components
+- `useReducer`: For handling more complex state logic and actions within the cart
+- `useContext`: For handling data globaly
